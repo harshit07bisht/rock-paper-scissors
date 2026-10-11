@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero">
+      <h1>Rock Paper Scissors</h1>
+      <p class="tagline">A fun, fair match. Play responsibly and enjoy the game.</p>
+      <div class="responsible-note">
+        <strong>Responsible play:</strong> Keep it friendly, take breaks, and remember it’s just for fun.
+      </div>
+    </section>
+
+    <section class="controls">
+      <div class="scoreboard">
+        <div>
+          <h2>You</h2>
+          <p id="player-score">0</p>
+        </div>
+        <div>
+          <h2>Round</h2>
+          <p id="round-number">0 / 5</p>
+        </div>
+        <div>
+          <h2>Computer</h2>
+          <p id="computer-score">0</p>
+        </div>
+      </div>
+
+      <div class="choices">
+        <button class="choice-btn" data-choice="rock">✊ Rock</button>
+        <button class="choice-btn" data-choice="paper">✋ Paper</button>
+        <button class="choice-btn" data-choice="scissors">✌️ Scissors</button>
+      </div>
+
+      <div class="arena">
+        <div class="hand player-hand">
+          <span class="hand-label">You</span>
+          <div class="hand-icon" id="player-move">?</div>
+        </div>
+        <div class="hand computer-hand">
+          <span class="hand-label">Computer</span>
+          <div class="hand-icon" id="computer-move">?</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-panel">
+      <div class="status-card">
+        <h2>Game status</h2>
+        <p id="status-text">Choose rock, paper, or scissors to begin.</p>
+      </div>
+      <div class="result-card">
+        <h2>Last round</h2>
+        <p id="result-text">No rounds played yet.</p>
+      </div>
+    </section>
+
+    <section class="history-panel">
+      <h2>Round history</h2>
+      <ul id="history-list" class="history-list">
+        <li>No rounds played yet.</li>
+      </ul>
+    </section>
+
+    <section class="summary">
+      <p id="history-text">Friendly reminder: a fair match is more enjoyable than a perfect one.</p>
+      <button id="reset-button" class="secondary-btn">Restart game</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
